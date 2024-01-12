@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tc.walmartproject.R
-import com.tc.walmartproject.ui.countries.data.CountriesFactItemModel
+import com.tc.walmartproject.data.model.CountriesFactItemModel
 
 class CountryAdapter(private var countries: ArrayList<CountriesFactItemModel>) : RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
 

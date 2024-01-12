@@ -1,4 +1,4 @@
-package com.tc.walmartproject.ui.countries.data
+package com.tc.walmartproject.data.model
 
 
 import com.google.gson.annotations.SerializedName

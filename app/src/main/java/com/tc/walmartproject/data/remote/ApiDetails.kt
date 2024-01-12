@@ -1,4 +1,4 @@
-package com.tc.walmartproject.data
+package com.tc.walmartproject.data.remote
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

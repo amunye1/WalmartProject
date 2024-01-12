@@ -1,6 +1,6 @@
-package com.tc.walmartproject.data
+package com.tc.walmartproject.data.remote
 
-import com.tc.walmartproject.ui.countries.data.CountriesFactItemModel
+import com.tc.walmartproject.data.model.CountriesFactItemModel
 import retrofit2.Response
 import retrofit2.http.GET
 
