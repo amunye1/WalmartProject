@@ -32,13 +32,13 @@ class CountryAdapter(private var countries: ArrayList<CountriesFactItemModel>) :
 
     class CountryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val name: TextView = itemView.findViewById(R.id.tvName)
-        private val region: TextView = itemView.findViewById(R.id.tvRegion)
+
         private val code: TextView = itemView.findViewById(R.id.tvCode)
         private val capital: TextView = itemView.findViewById(R.id.tvCapital)
 
         fun bind(country: CountriesFactItemModel) {
-            name.text = country.name
-            region.text = country.region
+            name.text = "${country.name}, ${country.region}"
+
             code.text = country.code
             capital.text = country.capital
         }

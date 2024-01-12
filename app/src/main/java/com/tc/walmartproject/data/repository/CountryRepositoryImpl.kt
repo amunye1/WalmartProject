@@ -10,8 +10,9 @@ class CountryRepositoryImpl(private val apiService: ApiEndpoint) : CountryReposi
     override suspend fun getCountriesFacts(): Flow<NetworkCase> {
         return flow {
             try {
-                val response = apiService.getCountriesFacts()
                 emit(NetworkCase.Loading)
+                val response = apiService.getCountriesFacts()
+
                 if (response.isSuccessful && response.body() != null) {
                     emit(NetworkCase.Success(response.body()!!))
                 } else {
