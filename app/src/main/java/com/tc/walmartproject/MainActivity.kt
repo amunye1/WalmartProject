@@ -1,7 +1,7 @@
 package com.tc.walmartproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.tc.walmartproject.ui.countries.view.CountryFragment
 
 class MainActivity : AppCompatActivity() {
@@ -18,8 +18,7 @@ class MainActivity : AppCompatActivity() {
             // Use supportFragmentManager to begin a transaction,
             // then replace the fragment container with your CountryFragment
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, countryFragment)
-                .commit()
+                .replace(R.id.fragment_container, countryFragment).commit()
         }
     }
 }

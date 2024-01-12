@@ -50,12 +50,17 @@ class CountryFragment : Fragment() {
         viewModel.countriesFact.observe(viewLifecycleOwner, Observer { networkcase ->
             when (networkcase) {
                 is NetworkCase.Loading -> {
-                    Toast.makeText(context,"Data is loading",Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Data is loading", Toast.LENGTH_LONG).show()
                 }
 
                 is NetworkCase.Error -> {
-                    Toast.makeText(context,"Error fetching data: ${networkcase.errorMessage}",Toast.LENGTH_LONG).show()
+                    Toast.makeText(
+                        context,
+                        "Error fetching data: ${networkcase.errorMessage}",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
+
                 is NetworkCase.Success -> adapter.updateCountries(networkcase.response)
 
 

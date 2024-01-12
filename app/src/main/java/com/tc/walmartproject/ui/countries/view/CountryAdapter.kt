@@ -8,10 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tc.walmartproject.R
 import com.tc.walmartproject.data.model.CountriesFactItemModel
 
-class CountryAdapter(private var countries: ArrayList<CountriesFactItemModel>) : RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
+class CountryAdapter(private var countries: ArrayList<CountriesFactItemModel>) :
+    RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_countries_user, parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_countries_user, parent, false)
         return CountryViewHolder(view)
     }
 
